@@ -4,7 +4,7 @@
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
 	--light-color: #e6e9ff;
-	--success-color: #5cb85c;
+	--success-color: #5c98b8;
 	--error-color: #d9534f;
 }
 
@@ -36,7 +36,7 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 20px;
-	background: #14de32;
+	background: #102dd5;
 	color: white;
 	border: 0;
 	font-size: 17px;
