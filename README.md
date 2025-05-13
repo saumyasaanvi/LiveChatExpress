@@ -1,52 +1,122 @@
-<h1 align="center"> 👤 Fun-Talk App  </h1>
-Realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend with a custom UI
+# 💬 LiveExpressChat
 
-## 💻 &nbsp; Setup
+**LiveExpressChat** is a real-time chat application built with **Node.js**, **Express**, **Socket.io**, and **MongoDB Atlas**. It enables users to join chat rooms, send messages, and view active participants — all in real-time.
 
-To run this project, install it locally using npm:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node.js](https://img.shields.io/badge/node.js-18.x-brightgreen.svg)
+![MongoDB](https://img.shields.io/badge/mongoDB-Atlas-green.svg)
+![Socket.io](https://img.shields.io/badge/socket.io-Real--Time-lightgrey.svg)
 
-***
-1. First and foremost, open your terminal and type to clone this repository.
-  ```
-  git clone https://github.com/HiteshBucky/Real-Time-Chat-App.git
-  ```
-2. Install the necessary dependencies to your app by running 
-  ```
-  npm install
-  ```
-3. Launch the development build of the app, by running  
-  ```
-  npm start
-  ```
-4. Open your favourite browser and type
-  ```
-  http://localhost:3000/
-  ```
-Happy Coding :)
-#
-#
-#
-### <h2 align="center"> ⚡️⚡️⚡️ &nbsp; [Live Demo](https://funtalk.herokuapp.com/) &nbsp; ⚡️⚡️⚡️ </h2>
+---
 
-#
-#
-#
-#
-<h1 align="center"> 💻 Screenshoots  </h1>
-#
-#
-          
+## 🚀 External Access
 
-![](images/image1.png)
+You can access the chat app externally using **Ngrok**
 
-#
-#
+> Replace this with your actual Ngrok URL when deploying.
 
+---
 
+## 🛠️ Tech Stack
 
-#
-#
+### 💻 Backend
+- **Node.js**: Runtime environment
+- **Express.js**: Web framework
+- **Socket.io (Server)**: Real-time bi-directional communication
+- **MongoDB Atlas**: Cloud-based database for storing messages
+- **Mongoose**: ODM for MongoDB
+- **Custom Utilities**:
+  - `formatMessage()`: Timestamp and format messages
+  - `userJoin()`, `getCurrentUser()`, `userLeave()`, `getRoomUsers()`: Handle user sessions and room data
 
-![](images/image2.png)
+### 🌐 Frontend
+- **HTML5 / CSS3 / JavaScript**
+- **Socket.io (Client)**: Handles WebSocket connections and events
+- **Static Assets**: Served from the `public/` directory
 
+### 🌍 Deployment Tools
+- **Ngrok**: Secure tunnels for public access to local development server
 
+---
+
+## 📁 Project Structure
+
+LiveExpressChat/
+│
+├── models/
+│ └── Message.js # Mongoose schema for chat messages
+│
+├── public/
+│ ├── index.html # Main frontend page
+│ └── js/
+│ └── main.js # Socket.io client logic
+│
+├── utils/
+│ ├── messages.js # Message formatting utility
+│ └── users.js # Room/user management
+│
+├── server.js # Main server file
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/LiveExpressChat.git
+cd LiveExpressChat
+```
+### 2.  Install Dependencies
+``` bash
+npm install
+```
+### 3.  Configure Environment
+``` bash
+const mongoURI = 'your-mongo-db-atlas-uri';
+```
+### 4. Start the Server
+``` bash
+node server.js
+```
+### 5. Run Ngrok (Optional for public access)
+``` bash
+ngrok http 3000
+```
+✨ Features
+✅ Join chat rooms with a username
+
+✅ Real-time messaging using WebSockets
+
+✅ Auto-scroll and timestamped messages
+
+✅ MongoDB message storage for persistence
+
+✅ Notifications when users join/leave
+
+✅ View active users in a room
+
+✅ Scalable and production-ready architecture
+
+🧪 Testing
+You can test the app locally by opening multiple browser tabs and joining the same room with different usernames.
+
+🛡️ Security Notes
+Always store credentials (like MongoDB URIs) in environment variables.
+
+Consider rate-limiting or message filtering for production environments.
+
+📜 License
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+Socket.io
+
+MongoDB Atlas
+
+Ngrok
+
+Express.js
+
+### Developed by Saumya Saanvi
