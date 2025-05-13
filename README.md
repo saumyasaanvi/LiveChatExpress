@@ -13,7 +13,6 @@
 
 You can access the chat app externally using **Ngrok**
 
-> Replace this with your actual Ngrok URL when deploying.
 
 ---
 
@@ -84,7 +83,7 @@ node server.js
 ``` bash
 ngrok http 3000
 ```
-✨ Features
+### ✨ Features
 ✅ Join chat rooms with a username
 
 ✅ Real-time messaging using WebSockets
@@ -99,24 +98,24 @@ ngrok http 3000
 
 ✅ Scalable and production-ready architecture
 
-🧪 Testing
+### 🧪 Testing
 You can test the app locally by opening multiple browser tabs and joining the same room with different usernames.
 
-🛡️ Security Notes
+### 🛡️ Security Notes
 Always store credentials (like MongoDB URIs) in environment variables.
 
 Consider rate-limiting or message filtering for production environments.
 
-📜 License
+### 📜 License
 This project is licensed under the MIT License.
 
-🙌 Acknowledgements
-Socket.io
+### 🙌 Acknowledgements
+>Socket.io
 
-MongoDB Atlas
+>MongoDB Atlas
 
-Ngrok
+>Ngrok
 
-Express.js
+>Express.js
 
 ### Developed by Saumya Saanvi
